@@ -231,11 +231,11 @@ public:
 	Pair(const T1 & aval, const T2 & bval) : a(aval), b(bval) { }
 	Pair() {}
 };
-
+template <PairArray V, PairArray N>
 class Wine
 {
 private:
-	char *label;
+	std::string label;
 	ArrayInt vint_year;
 	ArrayInt num_bottles;
 public:
@@ -245,4 +245,3 @@ public:
 	Wine(const char * l, int y, const int yr[], const int bot[]);
 	Wine(const char * l, int y);
 };
-
